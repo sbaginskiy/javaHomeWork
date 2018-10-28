@@ -5,15 +5,17 @@ public class tast1 {
 
 
     tast1 tast1 = new tast1();
-        System.out.println("zp человечка" + tast1.zp(20,60));
+        System.out.println("//1 " + tast1.zp(20,60));
+
+        System.out.println("//2 ");
 
         tast1.equation(5,4,-2);
 
+        System.out.println("//3 " +  tast1.sum(521));
 
-        System.out.println("сумма п" +  tast1.sum(521));
+        System.out.println("//4 " + tast1.ten(8.51,11));
 
-        System.out.println(323%10);
-
+        System.out.println("//5 " + tast1.fff(584));
 
     }
 
@@ -61,6 +63,37 @@ public class tast1 {
             n = n/10;
         }
         return sum;
+    }
+//4
+    public double ten(double n, double m){
+        double ten = 0;
+        double n1=0;
+        double m1=0;
+        if (n==m){return n;}
+        if (n>10){n1 = n-10;}else{n1 = 10-n;}
+        if (m<10){m1 = 10-n;}else{m1 = n-10;}
+        if (m1<n1){return m;}
+        if (m1>n1){return n;}
+        return 1;
+    }
+
+//5
+    public int fff(int n){
+        if(n<100 || n>999){return 0;}
+        int fff[] = new int[10];
+        for (int i = 0; i < 3;i++){
+
+            fff[i] = n%10;
+            n = n/10;
+
+        }
+        int max = fff[0];
+        for (int i = 1; i<3; i++){
+            if (max<fff[i]){
+                max = fff[i];
+            }
+        }
+        return max;
     }
 }
 
