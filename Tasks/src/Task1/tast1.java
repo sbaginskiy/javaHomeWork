@@ -1,27 +1,11 @@
 package Task1;
 
 public class tast1 {
-    public static void main(String[] args){
-
-
-    tast1 tast1 = new tast1();
-        System.out.println("//1 " + tast1.zp(20,60));
-
-        System.out.println("//2 ");
-
-        tast1.equation(5,4,-2);
-
-        System.out.println("//3 " +  tast1.sum(521));
-
-        System.out.println("//4 " + tast1.ten(8.51,11));
-
-        System.out.println("//5 " + tast1.fff(584));
-
-    }
 
 
 
-// 1
+
+//1
     public double zp(double kyrc, double time){
         double zp = 0;
         if (time > 60){time = 60;}
@@ -32,8 +16,6 @@ public class tast1 {
         }
         return zp;
     }
-
-
 //2
     public void equation(int a, int b, int c){
 
@@ -76,7 +58,6 @@ public class tast1 {
         if (m1>n1){return n;}
         return 1;
     }
-
 //5
     public int fff(int n){
         if(n<100 || n>999){return 0;}
@@ -95,5 +76,6 @@ public class tast1 {
         }
         return max;
     }
+
 }
 
