@@ -1,0 +1,12 @@
+package task4;
+
+
+public  interface Operation{
+    public Context getContext(Context context);
+
+    default Context xeexe(Context context){
+        context.number *= 2;
+        return context;
+    }
+
+}
