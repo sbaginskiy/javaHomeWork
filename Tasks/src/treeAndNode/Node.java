@@ -2,13 +2,13 @@ package treeAndNode;
 
 import java.util.function.Consumer;
 
-public class Node {
+public class Node<T> {
 
     private Node left;
     private Node right;
-    private double data;
+    private T data; //double
 
-    public Node(Node left, Node right, double data){
+    public Node(Node left, Node right, T data){
         this.data = data;
         this.left = left;
         this.right = right;
@@ -30,7 +30,7 @@ public class Node {
         this.left = left;
     }
 
-    public double getData() {
+    public T getData() {
         return data;
     }
 
